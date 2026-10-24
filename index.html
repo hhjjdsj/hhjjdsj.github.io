@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hhjjdsj — Networking &amp; Distributed Computing Portfolio</title>
+  <meta name="description" content="Personal portfolio of a Computer Science student at XJTLU Entrepreneur College (Taicang). Networking, distributed computing and data engineering projects." />
+  <!-- EDIT ME: replace "hhjjdsj" above and in the hero with your real name if you want -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- inline favicon: avoids an extra HTTP request (see report, section 2.6) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f46e5'/%3E%3Ctext x='50' y='68' font-size='52' font-family='monospace' fill='white' text-anchor='middle'%3E%26lt%3B%2F%26gt%3B%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-text">hhjjdsj</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" type="button"
+              aria-label="Toggle colour theme" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ---------------------------------------------------------------- hero -->
+    <section class="hero" id="top">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Xi'an Jiaotong-Liverpool University · Academy of AIAT</p>
+        <h1 class="hero-title">
+          Building reliable networks,
+          <span class="accent">one packet at a time.</span>
+        </h1>
+        <p class="hero-sub">
+          I am a Computer Science student at XJTLU Entrepreneur College (Taicang),
+          currently taking <strong>CSI205TC Networking and Distributed Computing</strong>.
+          This page collects the work I have done on socket programming, distributed
+          data processing and machine learning with Apache Spark.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="https://github.com/hhjjdsj" target="_blank" rel="noopener">
+            GitHub profile
+          </a>
+        </div>
+        <ul class="hero-stats" aria-label="Key figures">
+          <li><span class="stat-value">5</span><span class="stat-label">coursework projects</span></li>
+          <li><span class="stat-value">2</span><span class="stat-label">transports compared</span></li>
+          <li><span class="stat-value">11</span><span class="stat-label">Mbit/s streamed</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------- about -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <h2 class="section-title"><span class="section-index">01</span> About</h2>
+        <div class="grid-2">
+          <div class="prose reveal">
+            <p>
+              I study computer science at <strong>XJTLU Entrepreneur College (Taicang)</strong>.
+              My interests sit where operating systems, networks and data meet: how a
+              TCP connection actually behaves when the receiver is slow, why a UDP
+              stream silently loses frames, how a shuffle phase turns a word count into
+              a distributed problem.
+            </p>
+            <p>
+              Outside coursework I enjoy low-level debugging — packet captures,
+              sockets, processes — and I like writing tools that make behaviour
+              measurable rather than guessable. Every result on this page comes from
+              code I ran, not from a textbook.
+            </p>
+          </div>
+          <aside class="card fact-card reveal">
+            <h3>Quick facts</h3>
+            <dl class="facts">
+              <div><dt>Programme</dt><dd>BSc Computer Science</dd></div>
+              <div><dt>School</dt><dd>Academy of AIAT, XJTLU</dd></div>
+              <div><dt>Campus</dt><dd>Taicang, Jiangsu, China</dd></div>
+              <div><dt>Current module</dt><dd>CSI205TC Networking &amp; Distributed Computing</dd></div>
+              <div><dt>Toolbox</dt><dd>Python, sockets, Wireshark, Spark, Git</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------------------------------------- education -->
+    <section class="section section-alt" id="education">
+      <div class="wrap">
+        <h2 class="section-title"><span class="section-index">02</span> Education</h2>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-body">
+              <h3>BSc Computer Science</h3>
+              <p class="timeline-meta">XJTLU Entrepreneur College (Taicang) · 2024 – present</p>
+              <p>
+                Core modules in programming, data structures, computer networks and
+                distributed computing. Coursework is assessed through implementation
+                plus written analysis, which is why every project below ships with
+                measurements.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-body">
+              <h3>CSI205TC — Networking and Distributed Computing</h3>
+              <p class="timeline-meta">Semester 1, 2026/27 · 50% coursework</p>
+              <p>
+                Socket programming, transport-layer behaviour, MapReduce, Apache
+                Hadoop and Spark, and Spark MLlib. Lab work runs on an Ubuntu 24.04
+                virtual machine with Wireshark captures taken on the host.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------- skills -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2 class="section-title"><span class="section-index">03</span> Skills</h2>
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <h3>Networking</h3>
+            <ul class="tag-list">
+              <li>TCP / UDP sockets</li><li>DNS</li><li>HTTP &amp; TLS</li>
+              <li>Wireshark / tshark</li><li>ping, traceroute</li><li>MTU &amp; fragmentation</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3>Distributed data</h3>
+            <ul class="tag-list">
+              <li>MapReduce</li><li>Hadoop streaming</li><li>Apache Spark</li>
+              <li>RDD / DataFrame</li><li>MLlib</li><li>Shuffle &amp; partitioning</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3>Programming</h3>
+            <ul class="tag-list">
+              <li>Python</li><li>Java</li><li>SQL</li>
+              <li>NumPy / pandas</li><li>OpenCV</li><li>matplotlib</li>
+            </ul>
+          </article>
+          <article class="card skill-card reveal">
+            <h3>Tooling</h3>
+            <ul class="tag-list">
+              <li>Git &amp; GitHub</li><li>Linux (Ubuntu)</li><li>VMware</li>
+              <li>Jupyter</li><li>pytest / unittest</li><li>VS Code</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------- projects -->
+    <section class="section section-alt" id="projects">
+      <div class="wrap">
+        <h2 class="section-title"><span class="section-index">04</span> Projects</h2>
+        <div class="project-grid">
+          <article class="card project-card reveal">
+            <p class="project-kicker">CSI205TC · Q1</p>
+            <h3>Video streaming over TCP and UDP</h3>
+            <p>
+              A Python streaming application that sends a 300-frame video as JPEG
+              frames, once over TCP with length-prefixed framing and once over UDP
+              with 1400-byte datagrams and frame reassembly. Captured with tshark and
+              compared on latency, frame loss and packet overhead.
+            </p>
+            <ul class="project-metrics">
+              <li><strong>0%</strong> frame loss on TCP</li>
+              <li><strong>31.7%</strong> loss on overloaded UDP</li>
+              <li><strong>94</strong> zero-window events</li>
+            </ul>
+            <ul class="tag-list small">
+              <li>Python</li><li>sockets</li><li>OpenCV</li><li>tshark</li>
+            </ul>
+          </article>
+
+          <article class="card project-card reveal">
+            <p class="project-kicker">CSI205TC · Q2</p>
+            <h3>This website</h3>
+            <p>
+              A hand-written static site — no framework, no CDN, three files — deployed
+              with GitHub Pages. The interesting part is the network analysis behind
+              it: DNS resolution, TCP handshake, TLS negotiation and HTTP response,
+              measured with ping, tracert and Wireshark.
+            </p>
+            <ul class="project-metrics">
+              <li><strong>4</strong> HTTP requests</li>
+              <li><strong>0</strong> third-party domains</li>
+              <li><strong>&lt;15 KB</strong> critical path</li>
+            </ul>
+            <ul class="tag-list small">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li>
+            </ul>
+          </article>
+
+          <article class="card project-card reveal">
+            <p class="project-kicker">CSI205TC · Q3</p>
+            <h3>MapReduce from scratch</h3>
+            <p>
+              A small MapReduce engine written in pure Python: parallel map workers
+              emit <code>(word, 1)</code>, a hash-based shuffle partitions the pairs
+              across reducers, and each reducer sums its partition. No Hadoop and no
+              Spark — the point is to show the model, not to hide it.
+            </p>
+            <ul class="project-metrics">
+              <li><strong>M</strong> map workers</li>
+              <li><strong>R</strong> reducers</li>
+              <li><strong>hash(key) % R</strong> partitioning</li>
+            </ul>
+            <ul class="tag-list small">
+              <li>Python</li><li>multiprocessing</li><li>unittest</li>
+            </ul>
+          </article>
+
+          <article class="card project-card reveal">
+            <p class="project-kicker">CSI205TC · Q4 / Q5</p>
+            <h3>Hadoop vs Spark, and MLlib in practice</h3>
+            <p>
+              The same word-count workload implemented twice — Hadoop MapReduce and
+              Apache Spark — to compare programming model, execution plan and
+              performance, plus a complete Spark MLlib pipeline with feature
+              engineering, training and evaluation.
+            </p>
+            <ul class="project-metrics">
+              <li><strong>2</strong> execution engines</li>
+              <li><strong>1</strong> shared dataset</li>
+              <li><strong>MLlib</strong> end-to-end</li>
+            </ul>
+            <ul class="tag-list small">
+              <li>Hadoop</li><li>Spark</li><li>PySpark</li><li>MLlib</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------ contact -->
+    <section class="section" id="contact">
+      <div class="wrap contact-wrap">
+        <h2 class="section-title"><span class="section-index">05</span> Contact</h2>
+        <p class="contact-text">
+          The most reliable way to reach me is GitHub. I do not publish a phone
+          number or a student ID on a public page — for coursework queries please use
+          Learning Mall Core.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/hhjjdsj" target="_blank" rel="noopener">
+            github.com/hhjjdsj
+          </a>
+          <a class="btn btn-ghost" href="#top">Back to top</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> hhjjdsj · Built with hand-written HTML, CSS and JavaScript.</p>
+      <p class="footer-meta">Deployed on GitHub Pages · CSI205TC Coursework 1</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
